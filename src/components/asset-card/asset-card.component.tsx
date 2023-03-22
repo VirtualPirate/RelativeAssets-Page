@@ -29,6 +29,7 @@ export default function AssetCard(props: AssetCardPropsType) {
               : "text-[#00FFA3]"
           }`}
         >
+          {props.fluctuationPercentage > 0 ? "+" : ""}
           {props.fluctuationPercentage}%
         </div>
       </div>
