@@ -24,7 +24,7 @@ export default function AssetCard(props: AssetCardPropsType) {
         </div>
         <div
           className={`absolute right-4 text-xs top-1/2 -translate-y-1/2 ${
-            props.fluctuationPercentage < 0
+            props.fluctuationPercentage < 0 // If the percentage is negative
               ? "text-[#FF4D4D]"
               : "text-[#00FFA3]"
           }`}
@@ -37,7 +37,7 @@ export default function AssetCard(props: AssetCardPropsType) {
       <div
         className={`${styles.border_inset_outline} p-2 bg-[#14172b] w-full flex justify-center rounded-full`}
       >
-        ${props.tvl}
+        ${props.tvl.toLocaleString()}
       </div>
       <div className="text-sm font-bold text-[#5A5F7D]">TVL</div>
       <div
