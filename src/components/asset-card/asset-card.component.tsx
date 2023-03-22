@@ -16,6 +16,7 @@ export default function AssetCard(props: AssetCardPropsType) {
         className={`${styles.border_inset_outline} relative p-2 bg-[#14172b] w-full flex justify-center rounded-full`}
       >
         <div>
+          $
           {props.price.toLocaleString(undefined, {
             minimumFractionDigits: 2,
             maximumFractionDigits: 11,
